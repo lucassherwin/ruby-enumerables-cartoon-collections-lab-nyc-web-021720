@@ -14,10 +14,7 @@ end
 def long_planeteer_calls(calls_arr)# code an argument here
   # Your code here
   #isLonger = false
-  if(calls_arr.select {|call| call.length > 4}) do
-    return true
-  else
-    return false
+  calls_arr.any? { |call| call.length > 4 }
   end
 end
 
