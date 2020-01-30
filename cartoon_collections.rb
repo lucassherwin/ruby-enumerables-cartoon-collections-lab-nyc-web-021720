@@ -13,7 +13,12 @@ end
 
 def long_planeteer_calls(calls_arr)# code an argument here
   # Your code here
-
+  #isLonger = false
+  if(calls_arr.select {|call| call.length > 4}) do
+    return true
+  else
+    return false
+  end
 end
 
 def find_the_cheese# code an argument here
